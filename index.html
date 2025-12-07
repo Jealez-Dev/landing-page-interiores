@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span>Interiores Gonzalez</span>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-li"><a id="home" href="#hero">Inicio</a></li>
+                <li class="nav-li"><a id="proyectos" href="#projects">Nuestros proyectos</a></li>
+                <li class="nav-li"><a id="comienza" href="#start-now">Comienza ya</a></li>
+                <li class="nav-li"><a id="nosotros" href="#about">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1 class="hero-title">Desarrollamos software para que tu negocio crezca</h1>
+            <p class="hero-description">Ofrecemos soluciones tecnológicas innovadoras para impulsar el crecimiento de tu
+                empresa.</p>
+            <a href="#start-now" class="hero-button">Comienza ya</a>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Nuestros proyectos</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="https://i.pinimg.com/736x/b3/21/e2/b321e2485da40c0dde2685c3a4fdcb56.jpg" alt="Proyecto 1">
+                </div>
+                <div class="project">
+                    <img src="https://i.pinimg.com/736x/bf/78/6c/bf786cffdb27e7f899d1274188ca3ea6.jpg" alt="Proyecto 2">
+                </div>
+                <div class="project">
+                    <img src="https://i.pinimg.com/1200x/c2/72/68/c27268f1835bd4a73a54c096b7226085.jpg"
+                        alt="Proyecto 3">
+                </div>
+                <div class="project">
+                    <img src="https://i.pinimg.com/736x/b3/21/e2/b321e2485da40c0dde2685c3a4fdcb56.jpg" alt="Proyecto 1">
+                </div>
+                <div class="project">
+                    <img src="https://i.pinimg.com/736x/bf/78/6c/bf786cffdb27e7f899d1274188ca3ea6.jpg" alt="Proyecto 2">
+                </div>
+                <div class="project">
+                    <img src="https://i.pinimg.com/1200x/c2/72/68/c27268f1835bd4a73a54c096b7226085.jpg"
+                        alt="Proyecto 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="start-now" class="section-start-now">
+            <h2>¿Tienes algún proyecto en mente?</h2>
+            <div class="start-grid">
+                <div class="start-info">
+                    <h3>¡Estamos encantados de recibir tu mensaje!</h3>
+                    <p>
+                        <span>1. Primer contacto</span> <br>
+                        Recibimos tu solicitud y le echamos un vistazo con atención <br>
+
+                        <span>2. Revisamos tu información</span> <br>
+                        Analizamos lo que nos compartiste para entender mejor tu situación <br>
+
+                        <span>3. Agendamos contigo</span> <br>
+                        Nos pondremos en contacto para coordinar una cita en el momento que te venga mejor.
+                    </p>
+                </div>
+                <div class="start-form">
+                    <form action="" class="form">
+                        <div class="input-container">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">Número de telefono</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+
+                        <div class="input-container">
+                            <select name="design" id="design">
+                                <option disabled selected>Tipos de diseño</option>
+                                <option value="Interiores">Interiores</option>
+                                <option value="Exterior">Exterior</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <select name="presupuesto" id="presupuesto">
+                                <option disabled selected>Presupuesto para el diseño</option>
+                                <option value="100">100$</option>
+                                <option value="500">500$</option>
+                                <option value="900">900$</option>
+                                <option value="1300">1300$</option>
+                                <option value="2000">2000$</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <select name="negocio" id="negocio">
+                                <option disabled selected>Tipo de negocio</option>
+                                <option value="">Restaurantes</option>
+                                <option value="">Locales</option>
+                                <option value="">Fotocopiadoras</option>
+                                <option value="">Bodegón</option>
+                                <option value="">Bar</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="metros">Metros cuadrados aproximados</label>
+                            <input type="text" name="metros" id="metros">
+                        </div>
+                        <div class="input-container">
+                            <label for="horario">Horario para se contactado</label>
+                            <input type="time" name="horario" id="horario">
+                        </div>
+                        <div class="input-container">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" name="ciudad" id="ciudad">
+                        </div>
+                        <div class="input-container">
+                            <select name="local" id="local">
+                                <option disabled selected>¿Tienes local actualmente?</option>
+                                <option value="">Si</option>
+                                <option value="">No</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email del negocio</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </form>
+                    <button type="submit" form="form" class="submit-button">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="bunisess">
+                <div class="bunisess-values">
+                    <h2 class="title-about">Hablemos sin adornos</h2>
+                    <hr>
+                    <p class="p-about">
+                        Sabemos que no somos los más baratos, y eso está bien: no hacemos lo que hace todo el mundo.
+                        Diseñamos con estrategia, experiencia y enfoque realista. Si quieres claridad, visión y
+                        resultados concretos, sigue leyendo.
+                    </p>
+                    <div class="values-grid">
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-value">
+                            <img src="/assets/svg/money-svgrepo-com.svg" alt="" class="img-value">
+                            <div>
+                                <h3 class="title-value">NO SOMOS ECONÓMICOS, SOMOS ESTRATÉGICOS</h3>
+                                <p class="p-value">No improvisamos ni repetimos fórmulas vacías. Cada diseño nace de una
+                                    estrategia pensada
+                                    para ser construida tal como se presenta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mision-grid">
+                    <div class="container-mision">
+                        <h2 class="title-mision">No diseñamos con fórmulas, diseñamos con propósito</h2>
+                        <p class="p-mision">
+                            Sí, sabemos que todos dicen lo mismo “te ayudamos a vender más”, “te diferenciamos”, “te
+                            conectamos con tu público” pero ven y te explicamos cómo lo logramos nosotros.
+                            <br>
+                            <br>
+                            Para nosotros, un buen diseño nace cuando entendemos quién eres, qué vendes, y sobre todo
+                            por qué lo haces. Nuestro trabajo es ayudarte a convertir eso en un espacio que no solo se
+                            vea bien, sino que transmita tu personalidad, tu historia y tu valor.
+                        </p>
+                    </div>
+                    <div class="container-img">
+                        <img src="https://i.pinimg.com/1200x/04/69/4b/04694bde80e4dc84044a6c7006f68e2c.jpg" alt="">
+                    </div>
+                    <div class="container-mision row2-1">
+                        <h2 class="title-mision">Si tu diseño no habla como tú, entonces no está haciendo su trabajo
+                        </h2>
+                        <p class="p-mision">
+                            Antes de hablar de colores o muebles, queremos saber ¿cómo hablas?, ¿a quién le hablas?,
+                            ¿qué hace único a tu producto o servicio?
+                            <br>
+                            <br>
+
+                            <span>«Si nadie puede contar tu historia como tú, entonces nadie podrá competir contigo de
+                                la
+                                misma forma.»</span>
+                        </p>
+                    </div>
+                    <div class="container-img row2-2">
+                        <img src="https://i.pinimg.com/1200x/a2/08/3f/a2083f87f765314deae777d5f616440a.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="quienes-somos">
+                    <div class="container-quienes-somos">
+                        <h2 class="title-quienes-somos">¿Quiénes Somos?</h2>
+                        <p class="p-quienes-somos">
+                            ¡Hola! Somos Jeanniel Gonzalez y Sara de Gonzalez, una pareja de emprendedores e ingenieros
+                            civiles
+                            con mas de 10 años de experiencias en el rubro de la construcción, tenemos mas de 5 años
+                            diseñando interiores,construyendo y renovando espacios para el disfrute de nuestros
+                            clientes.
+                            <br>
+                            <br>
+                            Nuestra especialidad es el diseño interior y la instalación de acabados de alta calidad.
+                            Creemos firmemente que los diseños deben transmitir emociones a los usuarios a través de la
+                            funcionalidad, para luego cautivarlos con la estética y que nuestra formación como
+                            ingenieros
+                            civiles nos brinda una perspectiva única y tangible sobre cómo llevar a cabo proyectos de
+                            interiorismo y materializarlos de la mejor manera posible.
+                        </p>
+                    </div>
+                    <div class="container-carrusel">
+                        <img src="assets/carrusel/premium_photo-1675200124904-dfadce24119f.jpg"
+                            class="img-carrusel img1" alt="">
+                        <img src="assets/carrusel/premium_photo-1689568126014-06fea9d5d341.jpg"
+                            class="img-carrusel img2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Landing Page. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
